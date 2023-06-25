@@ -156,6 +156,11 @@ void Pair::setValue(Value* value)
 	delete this->value;
 	this->value = value;
 }
+void Pair::setNullValue()
+{
+	delete value;
+	value = new SingleValue("NULL");
+}
 bool Pair::add(const Pair& pair)
 {
 	return value->addValue(pair);

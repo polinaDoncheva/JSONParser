@@ -13,7 +13,7 @@ public:
 
 	void print(std::ostream& os, unsigned tabsCount) const override;
 	bool search(const MyString& key) const override;
-
+	void validateValue(const MyString& value) const;
 	Pair* findPath(const Vector<MyString>& path, unsigned currIndex) override;
 
 	bool addValue(const Pair& pair) override;

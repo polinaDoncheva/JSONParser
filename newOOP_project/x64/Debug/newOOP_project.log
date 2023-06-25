@@ -1,0 +1,12 @@
+﻿  JSONParser.cpp
+C:\Users\admin\source\repos\newOOP_project\newOOP_project\JSONParser.cpp(20,27): warning C4244: 'initializing': conversion from 'std::streamoff' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\newOOP_project\newOOP_project\JSONParser.cpp(40,34): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\newOOP_project\newOOP_project\JSONParser.cpp(229,33): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\newOOP_project\newOOP_project\JSONParser.cpp(267,33): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\newOOP_project\newOOP_project\JSONParser.cpp(279,33): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\newOOP_project\newOOP_project\JSONParser.cpp(297,33): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\newOOP_project\newOOP_project\JSONParser.cpp(321,31): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\newOOP_project\newOOP_project\JSONParser.cpp(383,33): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\newOOP_project\newOOP_project\JSONParser.cpp(412,33): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\admin\source\repos\newOOP_project\newOOP_project\JSONParser.cpp(318): warning C4715: 'JSONParser::getNewValue': not all control paths return a value
+  newOOP_project.vcxproj -> C:\Users\admin\source\repos\newOOP_project\x64\Debug\newOOP_project.exe

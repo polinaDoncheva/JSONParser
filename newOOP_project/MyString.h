@@ -2,6 +2,7 @@
 #include <iostream>
 #pragma warning (disable : 4996)
 
+//from Angles's github
 class MyString
 {
 	char* _data;

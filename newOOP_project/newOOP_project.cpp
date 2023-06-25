@@ -4,9 +4,11 @@
 #include "Vector.hpp"
 #include <iostream>
 #include <fstream>
-
+#include "JSONParser.h"
+#include "JSONExecutor.h"
 
 int main()
 {
-
+	JSONExecutor js;
+	js.runProgram();
 }

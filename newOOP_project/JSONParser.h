@@ -11,16 +11,20 @@ class JSONParser {
 	Value* getNewValue(const MyString& string) const;
 	void writeObject(std::ostream& os) const;
 
+	void validateValue(const MyString& value) const;
+
 	//validate functions from Milica!
 	bool validateQuotes(std::istream& ifs) const;
 	bool validateBrack(std::istream& ifs, const char ch) const;
-	//void validateLogic(std::istream& ifs, char c) const;
+	void validateLogic(std::istream& ifs, char c) const;
 
 public:
 	JSONParser() = default;
 	JSONParser(const MyString& fileName);
+
 	//validate function from Milica!
 	void validateFile(std::istream& ifs) const;
+
 	void parse(const MyString& fiileName);
 	void print() const;
 	void search(const MyString& key);
@@ -32,6 +36,8 @@ public:
 	
 	void deleteByPath(const MyString& path);
 	void move(const MyString& from, const MyString& to);
-	void save() const;
-	void saveAs(const MyString& newFileName) const;
+
+	void save(const MyString& path);
+	void saveAs(const MyString& path, const MyString& newFileName);
+	void close();
 };

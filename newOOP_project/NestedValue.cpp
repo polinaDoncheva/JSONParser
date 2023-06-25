@@ -49,6 +49,10 @@ bool NestedValue::search(const MyString& key) const
 	return isFound;
 }
 
+void NestedValue::validateValue(const MyString& value) const
+{
+	
+}
 Pair* NestedValue::findPath(const Vector<MyString>& path, unsigned currIndex)
 {
 	unsigned size = pairs.getSize();

@@ -1,6 +1,6 @@
 #include "SingleValue.h"
 #include <fstream>
-
+#include <exception>
 
 SingleValue::SingleValue(std::istream& is)
 {
@@ -20,7 +20,12 @@ SingleValue::SingleValue(std::istream& is)
 		else if (isBegin)
 			value += ch;
 	}
+}	
+SingleValue::SingleValue(const MyString& value)
+{
+	setValue(value);
 }
+
 void SingleValue::print(std::ostream& os, unsigned tabsCount) const
 {
 	os << '\"' << value << '\"';
@@ -46,4 +51,8 @@ bool SingleValue::addValue(const Pair& pair)
 bool SingleValue::deleteByKey(const MyString& key)
 {
 	return false;
+}
+void SingleValue::setValue(const MyString& value)
+{
+	this->value = value;
 }

@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArrayValue.cpp" />
+    <ClCompile Include="Commands.cpp" />
     <ClCompile Include="JSONExecutor.cpp" />
     <ClCompile Include="JSONParser.cpp" />
     <ClCompile Include="MyString.cpp" />
@@ -139,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayValue.h" />
+    <ClInclude Include="Commands.h" />
     <ClInclude Include="JSONExecutor.h" />
     <ClInclude Include="JSONParser.h" />
     <ClInclude Include="MyString.h" />

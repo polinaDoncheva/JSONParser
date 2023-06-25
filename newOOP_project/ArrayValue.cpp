@@ -34,7 +34,7 @@ void ArrayValue::resize()
 	values = temp;
 }
 
-ArrayValue::ArrayValue(const ArrayValue& other)
+ArrayValue::ArrayValue(const ArrayValue& other):Value(other)
 {
 	copyFrom(other);
 }
@@ -42,12 +42,13 @@ ArrayValue& ArrayValue::operator=(const ArrayValue& other)
 {
 	if (this != &other)
 	{
+		Value::operator=(other);
 		free();
 		copyFrom(other);
 	}
 	return *this;
 }
-ArrayValue::ArrayValue(ArrayValue&& other)
+ArrayValue::ArrayValue(ArrayValue&& other):Value(std::move(other))
 {
 	moveFrom(std::move(other));
 }
@@ -55,6 +56,7 @@ ArrayValue& ArrayValue::operator=(ArrayValue&& other)
 {
 	if (this != &other)
 	{
+		Value::operator=(std::move(other));
 		free();
 		moveFrom(std::move(other));
 	}

@@ -201,7 +201,8 @@ std::ostream& operator<<(std::ostream& os, const MyString& str)
 std::istream& operator>>(std::istream& is, MyString& str)
 {
 	char buff[1024];
-	is >> buff; // is.getLine(buff, 1024);
+	//is >> buff;
+	is.getline(buff, 1024);
 
 	delete[] str._data;
 	str._length = strlen(buff);

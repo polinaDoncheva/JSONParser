@@ -35,6 +35,7 @@ public:
 	Pair* findPath(const Vector<MyString>& path, unsigned currIndex);
 
 	void setValue(Value* value);
+	void setNullValue();
 	bool add(const Pair& pair);
 	void deleteByKey(const MyString& key);
 };
